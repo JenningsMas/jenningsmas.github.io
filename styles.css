@@ -1,0 +1,139 @@
+body {
+	position: relative;
+	justify-content: center;
+	background-color: #EEEEEE;
+	font-family: "Garamond";
+	line-height: 1.4;
+}
+
+h1,
+h2 {
+	line-height: 1.2;
+	font-size: 50px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+h3 {
+	border-bottom: 2px solid black;
+	font-size: 35px;
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-left: 25px;
+}
+
+nav {
+	position: relative;
+	width: 60%;
+	height: 5%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 10px;
+	font-size: 24px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+
+	a:link {
+		text-decoration: none;
+		color: grey;
+	}
+
+	a:visited {
+		text-decoration: none;
+		color: grey;
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: red;
+		animation-name: linkAnimation;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+}
+
+p {
+	font-size: 26px;
+	margin-top: 0px;
+	max-width: 1000px;
+	padding: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+
+}
+
+.mainContent {
+	overflow: auto;
+	background-color: #b4b4b43b;
+	width: 60%;
+	margin: auto;
+	border-radius: 15px;
+}
+
+.flyin {
+	animation: flyAnimation ease-in-out 1.0s forwards;
+}
+
+/*Site fly-in animation*/
+@keyframes flyAnimation {
+	from {
+		transform: translateY(5vw);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 100;
+	}
+}
+
+/*Animation for hovered links*/
+@keyframes linkAnimation {
+	from {
+		font-size: 24px;
+	}
+
+	to {
+		font-size: 28px;
+	}
+}
+
+/*End of animation section*/
+
+.contactList {
+	font-size: 28px;
+	list-style-type: disc;
+}
+
+li {
+	margin-left: 0px;
+}
+
+/*For link in works*/
+a:link {
+	color: rgb(171, 98, 98);
+}
+
+a:visited {
+	color: rgb(171, 98, 98);
+}
+
+details {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+summary {
+	font-size: 26px;
+	margin: 0px;
+	color: rgb(171, 98, 98);
+	display: flex;
+	justify-content: center;
+}
+
+#floated {
+	float: right;
+}

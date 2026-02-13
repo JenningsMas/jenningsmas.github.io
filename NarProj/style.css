@@ -1,0 +1,117 @@
+html{
+    /*Background image source: https://www.freepik.com/free-vector/small-wooden-blocks-texture_851179.htm#fromView=search&page=1&position=6&uuid=c89ab7d2-3bfe-4045-b370-20e58cd11582&query=wood+floor    */
+  background-image: radial-gradient(closest-corner, rgba(0,0,0,0), rgba(0,0,0,1)), url("Img/siteBg.jpg");
+  background-repeat: repeat;
+}
+
+/*Importing h1 font*/
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    margin: 100px;
+    border: 1px solid #222222;
+    border-radius: 25px;
+    background-color: #ffe6a7;
+    filter: drop-shadow(10px 10px 10px);
+}
+
+section{
+    padding: 20px;
+}
+
+h1{
+    color:#222222;
+    font-size: 80px;
+    text-align: center;
+    background-color: #cd9755;
+    border-top: 5px dashed #222222;
+    border-bottom: 5px dashed #222222;
+    margin-bottom: 0px;
+}
+
+nav{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #986f3d;
+    border: 2px solid #222222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    a{
+        font-family:'Courier New', Courier, monospace ;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+        border: 1px solid #222222;
+        border-radius: 5px;
+        background-color: #cd6755;
+        color:aliceblue;
+    }
+    a:visited{
+        color:aliceblue;
+    }
+    a:hover{
+        animation: none;
+    }
+}
+
+a{
+    font-family:'Courier New', Courier;
+    color: blue;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color:red;
+}
+
+p{
+    color:#222222;
+    text-indent: 30px;
+    font-size: 18px;
+}
+.ending{
+    text-indent: 0px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/*Animation for hovered links*/
+@keyframes linkAnimation{
+    from {font-size: 18px;}
+    to {font-size: 22px;}
+}
+a:hover{
+    animation-name: linkAnimation;
+    animation-duration: 4s;
+}
+/*End of animation section*/
+
+.audioContain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    border: 15px solid #222222;
+    border-radius: 25px;
+}
