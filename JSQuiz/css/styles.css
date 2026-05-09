@@ -1,0 +1,150 @@
+.error {
+    display: none;
+    color: red;
+}
+
+.suc {
+    display: none;
+    padding-bottom: 10px;
+    top: -30px;
+    float: right;
+    position: relative;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(90deg, rgb(113, 37, 37) 50%, black 51%);
+    background-size: 5px 5px;
+    backdrop-filter: blur(1px);
+    background-attachment: fixed;
+    background-blend-mode: difference;
+}
+
+hr {
+    border: 2px groove black;
+}
+
+#center {
+    grid-area: header;
+    font-family: "Courier New";
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px groove black;
+    align-items: center;
+    margin-bottom: 5px;
+    background: linear-gradient(to bottom, #bc032b 0%, #9b0319 44%, #ba0306 99%, #6d0019 100%);
+    color: white;
+}
+
+#content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #F2F0EF;
+    width: 900px;
+    display: grid;
+    align-content: center;
+    grid-template-areas:
+        "header header header"
+        "sidebar survey survey"
+        "sidebar badgeText badge"
+        "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto 250px;
+    gap: 3px;
+    padding: 5px;
+}
+
+#sidebar {
+    color: rgb(99, 99, 99);
+    font-size: 10px;
+    grid-area: sidebar;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: 30px auto auto
+}
+
+legend {
+    font-family: "Courier New";
+    font-weight: bold;
+}
+
+#survey {
+    grid-area: survey;
+}
+
+#footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #afadad;
+}
+
+#badgeText {
+    grid-area: badgeText;
+}
+
+#badge {
+    grid-area: badge;
+}
+
+#sidebar img {
+    width: 75%;
+    height: 75%;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid rgb(173, 46, 46);
+    border-radius: 4px;
+    background-color: #F2F0EF;
+    background-image: url("img/check.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+input[type=submit] {
+    font-family: "Courier New";
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    width: 100%;
+    background-color: #ed7f7f;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+input [type=radio] {
+    accent-color: red;
+}
+
+fieldset {
+    border: 2px groove rgb(173, 46, 46);
+    border-radius: 2px;
+}
+
+.hint {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(54, 54, 54, 0.662);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left: 10px;
+    position: absolute;
+}
+
+form {
+    background-color: #c1c1c1;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+a {
+    color: red;
+}

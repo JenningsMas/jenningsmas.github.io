@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Jennings Mas</title>
+    <script src="js/process_form.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="center">
+            <h1>Object Class Evaluation Survey</h1>
+        </div>
+
+        <div id="sidebar">
+            <!--Advertisement sourced from GAIM student group and used with permission-->
+            <p>Brought to you by our sponsors:</p>
+            <img src="img/goog.jpg">
+        </div>
+
+        <div id="survey">
+            <form name="theForm" id="theForm" action="process.php">
+                <fieldset>
+                    <legend>SCPINet Login Information</legend>
+                    <!--Fname-->
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="">
+                    <span class="hint">Letters only. Must start with capital letter.</span><br>
+                    <div id="fnameError" class="error">
+                        Your first name must start with a capital letter and cannot contain numbers or special
+                        characters
+                    </div>
+                    <div id="fnameSuc" class="suc">
+                        <img src="img/check.png" width="25" height="25">
+                    </div>
+                    <hr>
+                    <!--Lname-->
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="">
+                    <span class="hint">Letters, hyphen, and apostraphe only. Must start with capital
+                        letter.</span><br>
+                    <div id="lnameError" class="error">
+                        Your last name cannot contain numbers or special characters
+                    </div>
+                    <div id="lnameSuc" class="suc">
+                        <img src="img/check.png" width="25" height="25">
+                    </div>
+                    <hr>
+                    <!--Email-->
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" value="">
+                    <span class="hint">example@xxx.com</span><br>
+                    <div id="emailError" class="error">
+                        Email address must be entered as "example@domain.com"
+                    </div>
+                    <div id="emailSuc" class="suc">
+                        <img src="img/check.png" width="25" height="25">
+                    </div>
+                    <hr>
+                    <!--Phone-->
+                    <label for="phone">Phone #:</label><br>
+                    <input type="text" id="phone" name="phone" value="">
+                    <span class="hint">xxx xxx-xxxx</span><br>
+                    <div id="phoneError" class="error">
+                        Phone number must be entered as xxx xxx-xxxx
+                    </div>
+                    <div id="phoneSuc" class="suc">
+                        <img src="img/check.png" width="25" height="25">
+                    </div>
+                    <hr>
+                    <!--Website-->
+                    <label for="website">Website:</label><br>
+                    <input type="text" id="website" name="website" value="">
+                    <span class="hint">www.example.domain</span><br>
+                    <div id="websiteError" class="error">
+                        Website must be written in format of "www.example.domain"
+                    </div>
+                    <div id="siteSuc" class="suc">
+                        <img src="img/check.png" width="25" height="25">
+                    </div>
+                    <hr>
+                </fieldset>
+                <fieldset>
+                    <legend>Object Evaluation</legend>
+                    <!--Q1-->
+                    <p>If left alone, will the object naturaly exhibit anomalous properties?</p>
+                    <label for="q1">Yes</label> <!--If not apollyon, become Euclid-->
+                    <input type="radio" id="inert" name="q1" value=""><br>
+                    <label for="q1">No</label> <!--If not apollyon, become safe-->
+                    <input type="radio" id="active" name="q1" value=""><br>
+                    <hr>
+                    <!--Q2-->
+                    <p>Does the object present an active threat to human life?</p> <!--Flavor. No change to results.-->
+                    <label for="q1">Yes</label>
+                    <input type="radio" id="threat" name="q2" value=""><br>
+                    <label for="q1">No</label>
+                    <input type="radio" id="no_threat" name="q2" value=""><br>
+                    <hr>
+                    <!--Q3-->
+                    <p>Does the object naturally resist containment?</p>
+                    <label for="q1">Yes</label>
+                    <input type="radio" id="escape" name="q3" value=""><br> <!--If not apollyon, become keter-->
+                    <label for="q1">No</label>
+                    <input type="radio" id="no_escape" name="q3" value=""><br>
+                    <hr>
+                    <!--Q4-->
+                    <p>Can the object be contained?</p>
+                    <label for="q1">Yes</label> <!--Immediately apollyon regardless of other answers-->
+                    <input type="radio" id="apollyon" name="q4" value=""><br>
+                    <label for="q1">No</label>
+                    <input type="radio" id="no_apollyon" name="q4" value=""><br>
+                    <hr>
+                    <!--Q5-->
+                    <p>Does the object nullify, block, or otherwise prevent the anomalous properties of other objects?
+                    </p>
+                    <label for="q1">Yes</label>
+                    <input type="radio" id="thaum" name="q5" value=""><br> <!--If not apollyon, become thaumiel-->
+                    <label for="q1">No</label>
+                    <input type="radio" id="no_thaum" name="q5" value=""><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+        <div id="badgeText">
+
+        </div>
+        <div id="badge">
+
+        </div>
+
+        <div id="footer">
+            <p>Created for DIG 3716c by Jennings Mas</p>
+        </div>
+    </div>
+</body>
+
+</html>
