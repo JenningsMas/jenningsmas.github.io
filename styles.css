@@ -1,8 +1,19 @@
+:root {
+	font-family: Inter, sans-serif;
+	font-feature-settings: 'liga' 1, 'calt' 1;
+	/* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+	:root {
+		font-family: InterVariable, sans-serif;
+	}
+}
+
 body {
 	position: relative;
 	justify-content: center;
 	background-color: #EEEEEE;
-	font-family: "Garamond";
 	line-height: 1.4;
 }
 
@@ -24,17 +35,24 @@ h3 {
 	padding-left: 25px;
 }
 
+.contact_h3 {
+	border: none;
+	margin-bottom: 10px;
+}
+
 nav {
-	position: relative;
-	width: 60%;
-	height: 5%;
+	display: grid;
+	align-content: center;
+	grid-template-areas:
+		"nav1 nav2 nav3 nav4";
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto;
+	font-size: 24px;
 	margin-bottom: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
 	padding-bottom: 0px;
 	padding-top: 10px;
-	font-size: 24px;
-	text-align: center;
-	display: flex;
-	justify-content: space-between;
 
 	a:link {
 		text-decoration: none;
@@ -93,11 +111,11 @@ p {
 /*Animation for hovered links*/
 @keyframes linkAnimation {
 	from {
-		font-size: 24px;
+		transform: scale(1);
 	}
 
 	to {
-		font-size: 28px;
+		transform: scale(1.2);
 	}
 }
 
@@ -136,4 +154,18 @@ summary {
 
 #floated {
 	float: right;
+}
+
+.inline_img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 700px;
+	height: 500px;
+	border: 3px groove black;
+}
+
+.centered_a {
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
 }
