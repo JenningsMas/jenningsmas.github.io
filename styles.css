@@ -196,4 +196,9 @@ summary {
 		width: 500px;
 		height: 400px;
 	}
+
+	nav {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 }
