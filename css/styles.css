@@ -25,9 +25,9 @@ h2 {
 	margin-top: 0px;
 }
 
-h3 {
+.workHeader {
 	border-bottom: 2px solid black;
-	font-size: 35px;
+	font-size: 26px;
 	margin: 0px;
 	margin-top: 10px;
 	margin-left: 25px;
@@ -35,9 +35,13 @@ h3 {
 	padding-left: 25px;
 }
 
-.contact_h3 {
-	border: none;
-	margin-bottom: 10px;
+.contactHeader {
+	font-size: 35px;
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-left: 25px;
 }
 
 nav {
@@ -81,6 +85,16 @@ p {
 	padding-left: 60px;
 	padding-right: 60px;
 
+}
+
+.toolsCap {
+	font-size: 16px;
+	color: rgb(104, 104, 104);
+	margin-top: 0px;
+	max-width: 1000px;
+	margin-bottom: 0px;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 .mainContent {
